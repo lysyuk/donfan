@@ -312,7 +312,7 @@
 				</div>
 				<div class="row attention">					
 					<div class="col-md-12 col-md-offset-6 well">
-						<h4 class="text-center">Условия противопоказания</h4>
+						<h4 class="text-center">Противопоказания</h4>
 						<p>
 							It is a long established fact that a reader will 
 							be distracted by the readable content of a page 
@@ -330,7 +330,7 @@
 						</p>
 						<button type="button" class="btn btn-primary center-block"
 								data-toggle="modal" data-target="#getAdvice">
-							Узнать больше...
+							Узнать больше
 						</button>
 					</div>
 				</div>
@@ -344,7 +344,7 @@
 						  autocomplete="off"  name="orderCall4" >
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="getAdviceLabel">Больше информации</h4>
+							<h4 class="modal-title" id="getAdviceLabel">Противопоказания</h4>
 						</div>
 						<div class="modal-body">
 							<div class="form-group">
@@ -359,7 +359,7 @@
 									<label for="phone" class="glyphicon glyphicon-phone" rel="tooltip" title="Телефон"></label>
 								</div>
 							</div>
-							<button type="button" class="btn btn-primary center-block feedback" name="send">Узнать больше...</button>
+							<button type="button" class="btn btn-primary center-block feedback" name="send">Узнать больше</button>
 							<div class="row" id="security">
 								<div class="col-md-4">
 									<span class="glyphicon glyphicon-lock"></span>
@@ -405,11 +405,8 @@
 
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Все специалисты центра имеют дипломы 
+							медицинских ВУЗов Китая
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -419,11 +416,8 @@
 
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Все специалисты традиционной китайской медицины 
+							проходят жёсткий отбор
 						</p>
 					</div>
 				</div>
@@ -431,11 +425,9 @@
 					<div class="col-md-8 arrow-left">
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Выбрать время для реабилитационного курса удобно.
+							Без отрыва от работы и без пропусков 
+							ребёнком школьных занятий
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -444,11 +436,9 @@
 					<div class="col-md-8 arrow-right">
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Выбрать время для реабилитационного курса ребёнка 
+							не просто. Сложности взятие отпусков и пропуск 
+							ребёнком школы на время реабилитации.
 						</p>
 					</div>
 				</div>
@@ -456,11 +446,8 @@
 					<div class="col-md-8 arrow-left">
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Привычное окружение и климат дают возможность 
+							проходить реабилитационный курс с большим эффектом.
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -469,11 +456,10 @@
 					<div class="col-md-8 arrow-right">
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Смена климата и привычного окружения это стресс 
+							для ребёнка. Для адаптации к новой среде необходимо
+							время, которого может и не быть в связи с 
+							ограниченным сроком пребывания за границей.
 						</p>
 					</div>
 				</div>
@@ -481,11 +467,9 @@
 					<div class="col-md-8 arrow-left">
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							При нахождении в Сургуте выбрать оптимальный 
+							период реабилитации по состоянию здоровья 
+							ребёнка гораздо удобней. 
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -494,11 +478,10 @@
 					<div class="col-md-8 arrow-right">
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							При обострении заболевания специалисты не могут 
+							приступать к полноценному курсу реабилитации. 
+							Необходимо выжидать время для восстановления 
+							организма ребенка.
 						</p>
 					</div>
 				</div>
@@ -506,11 +489,7 @@
 					<div class="col-md-8 arrow-left">
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Визы не нужны
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -519,11 +498,8 @@
 					<div class="col-md-8 arrow-right">
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Весь перечень вопросом с получением визы для себя 
+							и ребёнка занимает не мало времени и сил
 						</p>
 					</div>
 				</div>
@@ -531,11 +507,7 @@
 					<div class="col-md-8 arrow-left">
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Значительная экономия
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -544,11 +516,8 @@
 					<div class="col-md-8 arrow-right">
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Расходы на транспорт, проживание, питание и сам 
+							реабилитационный курс стоят дорого.
 						</p>
 					</div>
 				</div>
@@ -556,11 +525,7 @@
 					<div class="col-md-8 arrow-left">
 						<img src="img/arrow-left.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Русский язык 
 						</p>
 					</div>
 					<div class="col-md-8">
@@ -569,11 +534,8 @@
 					<div class="col-md-8 arrow-right">
 						<img src="img/arrow-right.jpg">
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal
-							distribution of letters
+							Сложность со знанием языка и необходимость нанимать
+							переводчика.
 						</p>
 					</div>
 				</div>

@@ -1,10 +1,12 @@
 $(document).ready(function() {
+    $('#menu').affix({
+        offset: {
+            top: 100
+        }
+    })
     $("#menu a").click(function() {
-        $("html, body").animate({
-            scrollTop: $($(this).attr("href")).offset().top - 50 + "px"
-        }, {
-            duration: 1000
-        });
+        var str = $(this).attr("href");
+        $.scrollTo(str, 1000, {offset: -67});
         return false;
     });
     $(".phone").mask("+7 (999) 999-9999", {placeholder: " "});

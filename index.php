@@ -1,6 +1,6 @@
 <?php
 /**
- * version 1.1.0
+ * version 1.2.0
  */
 ?>
 
@@ -16,6 +16,7 @@
         <meta name="description" content="">        
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -39,10 +40,13 @@
 					<div class="col-xs-6">
 						<p class="logo-text">
 							<a href="#top">Дон Фань</a>
-						</p>
+						</p>						
 						<p class="logo-description">
 							Реабилитационный центр <br>
 							Китайской народной медицины
+						</p>
+						<p class="logo-address">
+							г. Сургут ХМАО-Югра
 						</p>
 					</div>
 					<div class="col-xs-4 links">
@@ -55,6 +59,7 @@
 					</div>
 					<div class="col-xs-6">
 						<p class="phone text-center">8 (3462) 44-66-04</p>
+						<p class="phone text-center">8 (922) 784-66-04</p>
 						<button class="btn btn-default center-block"  
 								data-toggle="modal" data-target="#orderCall">
 							Заказать звонок
@@ -107,13 +112,10 @@
 					<div class="col-xs-12">
 						<h1>Реабилитация детей с заболеваниями ЦНС<br> 							
 							специалистами Китая в Сургуте</h1>
-						<h2>ДЦП, ЗПРР, аутизм</h2>
-						<p>It has survived not only five centuries, but also 
-							the leap into electronic typesetting, remaining 
-							essentially unchanged. It was popularised in the
-							1960s with the release of Letraset sheets 
-							containing Lorem Ipsum passages, and more 
-							recently.</p>
+						<h2>Центр специализируется на лечении</h2>
+						<p>&bull; детского церебрального 
+							паралича<br>&bull; задержке психического развития<br>&bull; задержке
+							психоречевого развития<br>&bull; аутизма</p>
 					</div>
 					<div class="col-xs-8 col-xs-offset-4">
 						<div class="well">
@@ -156,7 +158,7 @@
 								<p>
 									<span>5</span> дипломированных специалистов 
 									по заболеваниям центральной нервной системы 
-									с опытом работы в Пекине и Тайване
+									с опытом работы в Пекине и Тайюане
 								</p>
 							</blockquote>													
 						</div>
@@ -173,7 +175,7 @@
 				</div>
 				<div class="row text-center">
 					<div class="col-xs-4">
-						<img src="img/specialist4.jpg" alt="" class="img-responsive img-circle">
+						<img src="img/specialist5.jpg" alt="" class="img-responsive img-circle">
 						<h4>Ли Чанвэй</h4>
 						<p><strong>Образование:</strong> высшее</p>
 						<p><strong>Специализация:</strong> иглоукалывание, прижигание и массаж</p>
@@ -183,25 +185,26 @@
 						<h4>Ван Дээнь</h4>
 						<p><strong>Образование:</strong> высшее</p>
 						<p><strong>Специализация:</strong> массаж</p>
-					</div>
+					</div>					
 					<div class="col-xs-4 col-xs-offset-1">
-						<img src="img/specialist1.jpg" alt="" class="img-responsive img-circle">
+						<img src="img/specialist4.jpg" alt="" class="img-responsive img-circle">
 						<h4>Сюе Яньлян</h4>
 						<p><strong>Образование:</strong> высшее</p>
 						<p><strong>Специализация:</strong> массаж</p>
 					</div>
 					<div class="col-xs-4 col-xs-offset-1">
 						<img src="img/specialist2.jpg" alt="" class="img-responsive img-circle">
-						<h4>У Куаотцзэ</h4>
-						<p><strong>Образование:</strong> высшее</p>
+						<h4>Ли Вэй Хуа</h4>
+						<p><strong>Образование:</strong> специальное</p>
 						<p><strong>Специализация:</strong> оздоровительный массаж</p>
-					</div>	
-					<!--<div class="col-xs-4 col-xs-offset-1">
-						<img src="img/specialist2.jpg" alt="" class="img-responsive img-circle">
-						<h4>У Куаотцзэ</h4>
-						<p><strong>Образование:</strong> высшее</p>
-						<p><strong>Специализация:</strong> оздоровительный массаж</p>
-					</div>-->
+					</div>
+					<div class="col-xs-4 col-xs-offset-1">
+						<img src="img/specialist1.jpg" alt="" class="img-responsive img-circle">
+						<h4>У Куаньцзэ</h4>
+						<p><strong>Образование:</strong> специальное</p>
+						<p><strong>Специализация:</strong> иглоукалование, прижигание, массаж, 
+							рефлексотерапия</p>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-20 col-xs-offset-2 well">						
@@ -213,9 +216,10 @@
 										<option value="">Выберите интересующий Вас вопрос</option>
 										<option value="Какие процедуры проводятся в Центре?">Какие процедуры проводятся в Центре?</option>
 										<option value="Чем отличаются русские методики массажа и ЛФК для ДЦП от китайских?">Чем отличаются русские методики массажа и ЛФК для ДЦП от китайских?</option>
-										<option value="Из каких китайских клиник наши специалисты?">Из каких китайских клиник наши специалисты?</option>
+										<option value="Из каких китайских клиник наши специалисты?">Из каких китайских клиник ваши специалисты?</option>
 										<option value="Какая длительность курса реабилитации?">Какая длительность курса реабилитации?</option>
 										<option value="Какие процедуры чаще всего используются?">Какие процедуры чаще всего используются?</option>
+										<option value="Работаете ли вы со спонсорами, благотворительными фондами и мицинатами?">Работаете ли вы со спонсорами, благотворительными фондами и меценатами?</option>
 									</select>
 									<label for="questions" class="glyphicon glyphicon-book" rel="tooltip" title="Выберите интересующую Вас тему"></label>
 								</div>
@@ -250,30 +254,66 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<img src="img/about-course1.jpg" alt="ЛФК" class="img-responsive">
+						<img src="img/about-course1.jpg" alt="ЛФК" class="img-responsive center-block">
 					</div>
 					<div class="col-xs-12">
 						<h4>ЛФК</h4>
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal 
-							distribution of letters, as opposed to using 
-							'Content here, content here', making it look 
-							like readable English. Many desktop publishing 
-							packages and web page editors now use Lorem 
-							Ipsum as their default model text, and a search
-							for 'lorem ipsum' will uncover many web sites 
-							still in their infancy. Various versions have 
-							evolved over the years, sometimes by accident, 
-							sometimes on purpose (injected humour and the like)
+							Лечебная физкультура позволяет создать динамичный 
+							двигательный режим, активизировать энергетику и 
+							защитные силы организма. Тренируются не только 
+							пораженные органы, но и весь организм.
 						</p>
+						<p>
+							Для получения 
+							положительного оздоравливающего эффекта 
+							заниматься нужно долго и упорно.
+						</p>
+
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
 						<h4>Иглотерапия</h4>
+						<p>
+							Иглоукалывание - самый древний из всех известных 
+							лечебных методов. Ему больше 5 тысяч лет. 
+						</p>
+						<p>
+							Было 
+							замечено, что определенные участки на коже связаны 
+							с нервной системой и конкретными внутренними 
+							органами. И если воздействовать на них, можно 
+							вылечить человека от многих заболеваний.
+						</p>						
+					</div>
+					<div class="col-xs-12">
+						<img src="img/about-course2.jpg" alt="Иглотерапия" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="img/about-course3.jpg" alt="Массаж" class="img-responsive center-block">
+					</div>
+					<div class="col-xs-12">
+						<h4>Массаж</h4>
+						<p>
+							У большинства больных ДЦП состояние значительно 
+							улучшается благодаря систематическому комплексному 
+							лечению, в которое входит массаж.
+						</p>
+						<p>
+							Массаж снижает рефлекторную возбудимость мышц, 
+							предупреждает образование и развитие контрактур,
+							уменьшает трофические расстройства, стимулирует 
+							функцию паретических мышц, улучшает циркуляцию 
+							крови и лимфы.
+						</p>
+					</div>
+				</div>
+				<!--<div class="row">
+					<div class="col-xs-12">
+						<h4>Прижигание</h4>
 						<p>
 							It is a long established fact that a reader will 
 							be distracted by the readable content of a page 
@@ -291,49 +331,117 @@
 						</p>						
 					</div>
 					<div class="col-xs-12">
-						<img src="img/about-course2.jpg" alt="Иглотерапия" class="img-responsive">
+						<img src="img/about-course4.jpg" alt="Прижигание" class="img-responsive center-block">
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<img src="img/about-course3.jpg" alt="Массаж" class="img-responsive">
+				</div>-->
+				<div class='list-group gallery well'>
+					<div class="row">						
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-2.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-2.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-3.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-3.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-4.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-4.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-5.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-5.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->	
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-6.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-6.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->				
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-7.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-7.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->						
 					</div>
-					<div class="col-xs-12">
-						<h4>Массаж</h4>
-						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal 
-							distribution of letters, as opposed to using 
-							'Content here, content here', making it look 
-							like readable English. Many desktop publishing 
-							packages and web page editors now use Lorem 
-							Ipsum as their default model text, and a search
-							for 'lorem ipsum' will uncover many web sites 
-							still in their infancy. Various versions have 
-							evolved over the years, sometimes by accident, 
-							sometimes on purpose (injected humour and the like)
-						</p>
+					<div class="row">
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-8.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-8.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-9.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-9.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-10.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-10.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-11.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-11.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-12.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-12.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-13.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-13.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->						
+					</div>		
+					<div class="row">
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-14.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-14.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-15.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-15.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-16.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-16.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-17.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-17.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-18.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-18.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-19.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-19.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
 					</div>
-				</div>
+				</div> <!-- list-group / end -->
 				<div class="row attention">					
 					<div class="col-xs-12 col-xs-offset-6 well">
 						<h4 class="text-center">Противопоказания</h4>
 						<p>
-							It is a long established fact that a reader will 
-							be distracted by the readable content of a page 
-							when looking at its layout. The point of using 
-							Lorem Ipsum is that it has a more-or-less normal 
-							distribution of letters, as opposed to using 
-							'Content here, content here', making it look 
-							like readable English. Many desktop publishing 
-							packages and web page editors now use Lorem 
-							Ipsum as their default model text, and a search
-							for 'lorem ipsum' will uncover many web sites 
-							still in their infancy. Various versions have 
-							evolved over the years, sometimes by accident, 
-							sometimes on purpose (injected humour and the like)
+							При эпилептологических припадках (эпилепсия) не 
+							рекомендуется проводить  процедуры электронного 
+							массажа.<br>
+							В каждом случае необходимо проконсультироваться с 
+							лечащим врачом.
+
 						</p>
 						<button type="button" class="btn btn-primary center-block"
 								data-toggle="modal" data-target="#getAdvice">
@@ -385,7 +493,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-24">
-						<h2 class="text-center">Лечение в Сургуте - это выгодно и безопасно</h2>
+						<h2 class="text-center">Почему приходят к нам?</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -443,9 +551,8 @@
 					<div class="col-xs-8 arrow-right">
 						<img src="img/arrow-right.png">
 						<p>
-							Выбрать время для реабилитационного курса ребёнка 
-							не просто. Сложности взятие отпусков и пропуск 
-							ребёнком школы на время реабилитации.
+							Требуется взять отпуск на работе на время реабилитации.
+							Ребенок пропустит школу
 						</p>
 					</div>
 				</div>
@@ -454,7 +561,7 @@
 						<img src="img/arrow-left.png">
 						<p>
 							Привычное окружение и климат дают возможность 
-							проходить реабилитационный курс с большим эффектом.
+							проходить реабилитационный курс с большим эффектом
 						</p>
 					</div>
 					<div class="col-xs-8">
@@ -466,7 +573,7 @@
 							Смена климата и привычного окружения это стресс 
 							для ребёнка. Для адаптации к новой среде необходимо
 							время, которого может и не быть в связи с 
-							ограниченным сроком пребывания за границей.
+							ограниченным сроком пребывания за границей
 						</p>
 					</div>
 				</div>
@@ -474,9 +581,9 @@
 					<div class="col-xs-8 arrow-left">
 						<img src="img/arrow-left.png">
 						<p>
-							При нахождении в Сургуте выбрать оптимальный 
+							Выбрать оптимальный 
 							период реабилитации по состоянию здоровья 
-							ребёнка гораздо удобней. 
+							ребёнка гораздо удобней 
 						</p>
 					</div>
 					<div class="col-xs-8">
@@ -485,10 +592,10 @@
 					<div class="col-xs-8 arrow-right">
 						<img src="img/arrow-right.png">
 						<p>
-							При обострении заболевания специалисты не могут 
-							приступать к полноценному курсу реабилитации. 
-							Необходимо выжидать время для восстановления 
-							организма ребенка.
+							При обострении заболевания специалисты не смогут 
+							приступить к курсу реабилитации. 
+							Необходимо выждать время для восстановления 
+							организма ребенка
 						</p>
 					</div>
 				</div>
@@ -505,7 +612,7 @@
 					<div class="col-xs-8 arrow-right">
 						<img src="img/arrow-right.png">
 						<p>
-							Весь перечень вопросом с получением визы для себя 
+							Решение вопросов, связанных с получением визы для себя 
 							и ребёнка занимает не мало времени и сил
 						</p>
 					</div>
@@ -523,8 +630,8 @@
 					<div class="col-xs-8 arrow-right">
 						<img src="img/arrow-right.png">
 						<p>
-							Расходы на транспорт, проживание, питание и сам 
-							реабилитационный курс стоят дорого.
+							Расходы на перелёт, проживание, питание и сам 
+							реабилитационный курс
 						</p>
 					</div>
 				</div>
@@ -542,7 +649,7 @@
 						<img src="img/arrow-right.png">
 						<p>
 							Сложность со знанием языка и необходимость нанимать
-							переводчика.
+							переводчика
 						</p>
 					</div>
 				</div>
@@ -562,7 +669,7 @@
 				</div>
 				<div class="row boss">
 					<div class="col-xs-6">
-						<img src="img/head.jpg" alt="Руководитель" class="img-responsive">
+						<img src="img/head.jpg" alt="Руководитель" class="img-responsive img-circle">
 					</div>
 					<div class="col-xs-10">
 						<h3>Руководитель</h3>
@@ -583,14 +690,24 @@
 							</div>
 							<div class="col-xs-20 ">
 								<p>8 (3462) 44-66-04</p>
+								<p>8 (922) 784-66-04</p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-4">
-								<span class="glyphicon glyphicon glyphicon-envelope"></span>
+								<span class="glyphicon glyphicon-envelope"></span>
 							</div>
 							<div class="col-xs-20 cont">
 								<p>info@donfan.ru</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="glyphicon glyphicon-home"></span>
+							</div>
+							<div class="col-xs-20 cont">
+								<p>ул. Югорская, д. 15</p> 
+								<p>г. Сургут, ХМАО-Югра</p>
 							</div>
 						</div>
 					</div>
@@ -607,14 +724,38 @@
 		<script src="js/vendor/jquery.scrollTo.min.js"></script> 
 		<script type="text/javascript" src="feedback/js/feedback.js"></script>
 		<script src="feedback/js/jquery.arcticmodal.js"></script>
+		<script src="js/vendor/jquery.fancybox.pack.js"></script>
 		<script src="js/main.js"></script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+					(function(d, w, c) {
+						(w[c] = w[c] || []).push(function() {
+							try {
+								w.yaCounter24484718 = new Ya.Metrika({id: 24484718,
+									clickmap: true,
+									trackLinks: true,
+									accurateTrackBounce: true});
+							} catch (e) {
+							}
+						});
 
-		<script> 			var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-			(function(d, t) {
-				var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-				g.src = '//www.google-analytics.com/ga.js';
-				s.parentNode.insertBefore(g, s)
-			}(document, 'script'));
+						var n = d.getElementsByTagName("script")[0],
+								s = d.createElement("script"),
+								f = function() {
+									n.parentNode.insertBefore(s, n);
+								};
+						s.type = "text/javascript";
+						s.async = true;
+						s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+						if (w.opera == "[object Opera]") {
+							d.addEventListener("DOMContentLoaded", f, false);
+						} else {
+							f();
+						}
+					})(document, window, "yandex_metrika_callbacks");
 		</script>
-    </body>
+		<noscript><div><img src="//mc.yandex.ru/watch/24484718" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</body>
 </html>

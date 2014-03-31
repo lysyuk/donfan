@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#menu').affix({
         offset: {
-            top: 100
+            top: 1
         }
     })
     $("#menu a").click(function() {

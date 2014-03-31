@@ -10,4 +10,8 @@ $(document).ready(function() {
         return false;
     });
     $(".phone").mask("+7 (999) 999-9999", {placeholder: " "});
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
 });

@@ -16,6 +16,7 @@
         <meta name="description" content="">        
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -317,6 +318,104 @@
 						</p>
 					</div>
 				</div>
+				<div class='list-group gallery well'>
+					<div class="row">						
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-2.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-2.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-3.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-3.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-4.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-4.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-5.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-5.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->	
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-6.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-6.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->				
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-7.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-7.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->						
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-8.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-8.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-9.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-9.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-10.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-10.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-11.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-11.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-12.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-12.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-13.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-13.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->						
+					</div>		
+					<div class="row">
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-14.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-14.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-15.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-15.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-16.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-16.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-17.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-17.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-18.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-18.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+						<div class="col-xs-4">
+							<a class="thumbnail fancybox" rel="ligthbox" href="img/gallery-19.jpg">
+								<img class="img-responsive" alt="" src="img/gallery-19.jpg" />								
+							</a>
+						</div> <!-- col-6 / end -->
+					</div>
+				</div> <!-- list-group / end -->
 				<div class="row attention">					
 					<div class="col-xs-12 col-xs-offset-6 well">
 						<h4 class="text-center">Противопоказания</h4>
@@ -607,6 +706,7 @@
 		<script src="js/vendor/jquery.scrollTo.min.js"></script> 
 		<script type="text/javascript" src="feedback/js/feedback.js"></script>
 		<script src="feedback/js/jquery.arcticmodal.js"></script>
+		<script src="js/vendor/jquery.fancybox.pack.js"></script>
 		<script src="js/main.js"></script>
 
 		<script> 			var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
@@ -616,5 +716,5 @@
 				s.parentNode.insertBefore(g, s)
 			}(document, 'script'));
 		</script>
-    </body>
+	</body>
 </html>

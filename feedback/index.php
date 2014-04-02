@@ -8,6 +8,8 @@ $exemple = array();
 $form = array();
 $host = $_SERVER['HTTP_HOST'];
 $ref = $_SERVER['HTTP_REFERER'];
+$refererInfo = searchstr($_SERVER['HTTP_REFERER'], ':');
+$refererInfo = explode(":", $refererInfo);
 
 $form['orderCall1'] = array(
 	'fields' => array(
@@ -111,24 +113,24 @@ $form['orderCall2'] = array(
 );
 $form['orderCall3'] = array(
 	'fields' => array(
-		'questions' => array(
-			'title' => 'Тема',
-			'validate' => array(
+		'questions'	 => array(
+			'title'		 => 'Тема',
+			'validate'	 => array(
 				'minlength' => '1',
 			),
-			'messages' => array(
+			'messages'	 => array(
 				'minlength' => '[ %1$s ] необходимо выбрать',
 			)
 		),
-		'email' => array(
-			'title' => 'Почта',
-			'validate' => array(
-				'preg' => '%@%is',
-				'minlength' => '5',
+		'email'		 => array(
+			'title'		 => 'Почта',
+			'validate'	 => array(
+				'preg'		 => '%@%is',
+				'minlength'	 => '5',
 			),
-			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			'messages'	 => array(
+				'preg'		 => 'Поле [ %1$s ] возможно содержит ошибку',
+				'minlength'	 => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
 	),
@@ -394,7 +396,10 @@ if (isset($form[$act]))
 				$sb['body'] .= $data['title'].": ".$data['value']."\r\n";
 			}
 			if ($form['cfg']['referer'])
-				$sb['body'] .= "\r\n\r\n\r\n\r\n".$ref;
+			{
+				$sb['body'] .= "\r\n\r\n".$ref;
+				$sb['body'] .= "\r\n\r\n".$refererInfo;
+			}
 		}
 		// если есть что добавить
 		if (isset($form['cfg']['adds']) && is_array($form['cfg']['adds']))
@@ -484,4 +489,53 @@ function tpl($vars)
 	{
 		return false;
 	}
+}
+
+function is_utf8(&$data, $is_strict = true)
+{
+	if (is_array($data))
+	{
+		foreach ($data as $k => &$v)
+			if ( ! is_utf8($v, $is_strict))
+				return false;
+		return true;
+	}
+	elseif (is_string($data))
+	{
+		/*
+		  Рег. выражения имеют внутренние ограничения на длину повторов шаблонов поиска *, +, {x,y}
+		  равное 65536, поэтому используем preg_replace() вместо preg_match()
+		 */
+		$result = $is_strict ?
+				preg_replace('/(?>[\x09\x0A\x0D\x20-\x7E]           # ASCII
+                                  | [\xC2-\xDF][\x80-\xBF]            # non-overlong 2-byte
+                                  |  \xE0[\xA0-\xBF][\x80-\xBF]       # excluding overlongs
+                                  | [\xE1-\xEC\xEE\xEF][\x80-\xBF]{2} # straight 3-byte
+                                  |  \xED[\x80-\x9F][\x80-\xBF]       # excluding surrogates
+                                  |  \xF0[\x90-\xBF][\x80-\xBF]{2}    # planes 1-3
+                                  | [\xF1-\xF3][\x80-\xBF]{3}         # planes 4-15
+                                  |  \xF4[\x80-\x8F][\x80-\xBF]{2}    # plane 16
+                                 )*
+                                /sx', '', $data) :
+				#это рег. выражение проверяет более широкий диапазон ASCII [\x00-\x7E]
+				preg_replace('/.*/su', '', $data);
+		if (function_exists('preg_last_error'))
+		{
+			if (preg_last_error() === PREG_NO_ERROR)
+				return strlen($result) === 0;
+			if (preg_last_error() === PREG_BAD_UTF8_ERROR)
+				return false;
+		}
+	}
+	elseif (is_scalar($data) || is_null($data))
+		return true;#~ null, integer, float, boolean
+	#~ object or resource
+	trigger_error('Scalar, null or array type expected, '.gettype($data).' given ', E_USER_WARNING);
+	return false;
+}
+
+function searchstr($str, $separator)
+{
+	$str = str_replace("+", " ", rawurldecode(preg_replace('~^http://(www\.)?(search\.live\.com|google\.(com|ru|com\.ua){1}|rambler\.ru|yandex\.ru|search\.yahoo\.com){1}/(.*)(&|\?)(q|words|text|p)=([^&]+)(.*)$~i', '$2'.$separator.'$7', $str)));
+	return is_utf8($str) ? $str : iconv('cp1251', 'UTF-8', $str);
 }

@@ -8,8 +8,8 @@ $exemple = array();
 $form = array();
 $host = $_SERVER['HTTP_HOST'];
 $ref = $_SERVER['HTTP_REFERER'];
-$refererInfo = searchstr($_SERVER['HTTP_REFERER'], ':');
-$refererInfo = explode(":", $refererInfo);
+$referer = searchstr($ref, ':');
+$refererInfo = explode(":", $referer);
 
 $form['orderCall1'] = array(
 	'fields' => array(
@@ -50,7 +50,7 @@ $form['orderCall1'] = array(
 		'to_name'	 => 'Дон Фань, Дон Фань',
 		'geoip'		 => true,
 		'referer'	 => true,
-		'type'		 => 'html',
+		'type'		 => 'plain',
 		'tpl'		 => false,
 		'antispam'	 => 'email77',
 		'antispamjs' => 'address77',
@@ -100,7 +100,7 @@ $form['orderCall2'] = array(
 		'to_name'	 => 'Дон Фань, Дон Фань',
 		'geoip'		 => true,
 		'referer'	 => true,
-		'type'		 => 'html',
+		'type'		 => 'plain',
 		'tpl'		 => false,
 		'antispam'	 => 'email77',
 		'antispamjs' => 'address77',
@@ -146,7 +146,7 @@ $form['orderCall3'] = array(
 		'to_name'	 => 'Дон Фань, Дон Фань',
 		'geoip'		 => true,
 		'referer'	 => true,
-		'type'		 => 'html',
+		'type'		 => 'plain',
 		'tpl'		 => false,
 		'antispam'	 => 'email77',
 		'antispamjs' => 'address77',
@@ -196,7 +196,7 @@ $form['orderCall4'] = array(
 		'to_name'	 => 'Дон Фань, Дон Фань',
 		'geoip'		 => true,
 		'referer'	 => true,
-		'type'		 => 'html',
+		'type'		 => 'plain',
 		'tpl'		 => false,
 		'antispam'	 => 'email77',
 		'antispamjs' => 'address77',
@@ -397,8 +397,9 @@ if (isset($form[$act]))
 			}
 			if ($form['cfg']['referer'])
 			{
-				$sb['body'] .= "\r\n\r\n".$ref;
-				$sb['body'] .= "\r\n\r\n".$refererInfo;
+				$sb['body'] .= "\r\n\r\n";
+				$sb['body'] .= "Поисковик: ".$refererInfo[0]."\r\n";
+				$sb['body'] .= "Ключевое слово: ".$refererInfo[1]."\r\n";
 			}
 		}
 		// если есть что добавить

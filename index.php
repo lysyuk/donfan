@@ -12,8 +12,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">        
+        <title>Реабилитационный центр</title>
+        <meta name="description" content="Реабилитация детей с заболеваниями ЦНС специалистами Китая в Сургуте">   
+<meta name="google-site-verification" content="nZCKW6SMrh5cMjJaZVndXphaJY_VGK7rRmrIwfR23dA" />		
         <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
 		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
